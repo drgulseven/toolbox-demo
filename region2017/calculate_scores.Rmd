@@ -37,6 +37,7 @@ library(here)
 library(ohicore)
 
 ## set the working directory to a filepath we all have
+# getwd()
 setwd(here::here('region2017'))
 ```
 

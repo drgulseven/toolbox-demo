@@ -1,9 +1,9 @@
 # region data layers----
 # a list of possible id fields used in datalayers (most will use rgn_id, but not always)
-layers_id_fields    = c('rgn_id','cntry_key', 'fao_id', 'fao_saup_id', 'country_id','saup_id','fao_ohi_id') 
+layers_id_fields    = c('rgn_id','cntry_key', 'fao_id', 'fao_saup_id', 'country_id','saup_id','fao_ohi_id')
 
 # the official list of regions (and corresponding names)
-layer_region_labels = 'rgn_global'   
+layer_region_labels = 'rgn_global'
 
 # the official ocean areas of each region (used to weight each subregions contribution to the region score)
 layer_region_areas  = 'rgn_area'
@@ -28,7 +28,7 @@ pressures_element  = list('NP'  = 'np_harvest_product_weight',
 pressures_gamma = 0.5  # The relative importance of social vs. ecological pressures (pressure = gamma * ecological + (1-gamma) * social)
 resilience_gamma = 0.5 # The relative importance of social vs. ecological resiliences (resilience = gamma * ecological + (1-gamma) * social)
 goal_discount = 1.0    # Used to calculate likely future state
-goal_beta = 0.67       # The relative importance of trend vs. pressure/resilience on likely future state; if goal_beta = 0.67, trend is twice as important as pressure/resilience.
+goal_beta = 0.5       # The relative importance of trend vs. pressure/resilience on likely future state; if goal_beta = 0.67, trend is twice as important as pressure/resilience.
 default_trend = 0
 
 # spatial configuration (used by shiny app and future ohicore mapping functions that use leaflet)

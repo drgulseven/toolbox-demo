@@ -193,8 +193,7 @@ Here we calculated the mean summer secchi depth per year for each region.
 
 _Plotting per region by year showed that not all regions have continuous and adequate data. There are differents ways to deal with that, which we will not explore today. You could read more on gapfilling in our [OHI Manual](http://ohi-science.org/manual/#gapfilling)._ 
 
-``` {r mean monthly secchi depth}
-
+``` 
 ## calculate monthly means for each month
 mean_months = summer %>% select(bhi_id, year, month, secchi) %>%
               group_by(bhi_id, year, month) %>%
@@ -241,7 +240,7 @@ _**Tip**: filenames should not have any spaces: use an underscore instead. This 
 
 
 ```{r}
-write_csv(mean_months_summer, file.path(dir_layers, "cw_mean_secchi_region2016.csv"))
+#write_csv(mean_months_summer, #file.path(dir_layers, #"cw_mean_secchi_region2016.csv"))
 ```
 
 
